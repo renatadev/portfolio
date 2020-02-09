@@ -2,13 +2,13 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <p>
+    <footer>
       Made with
       <span role="img" aria-label="Purple heart emoji">
         💜
       </span>
       by Renata
-    </p>
+    </footer>
   );
 };
 
