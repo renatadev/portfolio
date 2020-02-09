@@ -1,14 +1,17 @@
 import React from "react";
+import * as Style from "./Footer.style";
 
 const Footer = () => {
   return (
-    <footer>
-      Made with
-      <span role="img" aria-label="Purple heart emoji">
-        💜
-      </span>
-      by Renata
-    </footer>
+    <Style.FooterWrapper>
+      <footer>
+        Made with
+        <span role="img" aria-label="Purple heart emoji">
+          💜
+        </span>
+        by Renata
+      </footer>
+    </Style.FooterWrapper>
   );
 };
 

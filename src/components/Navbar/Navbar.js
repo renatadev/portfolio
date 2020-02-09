@@ -1,10 +1,13 @@
 import React from "react";
+import * as Style from "./Navbar.style";
 
 const Navbar = () => {
   return (
     <>
-      <h1>RG</h1>
-      {/* menu */}
+      <Style.Navbar>
+        <h1>RG</h1>
+        {/* menu */}
+      </Style.Navbar>
     </>
   );
 };

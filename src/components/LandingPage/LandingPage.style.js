@@ -6,17 +6,18 @@ import { ReactComponent as Github } from "../../assets/SocialMedia/github.svg";
 import { ReactComponent as Linkedin } from "../../assets/SocialMedia/linkedin.svg";
 
 const HeaderContainer = styled.header`
-  width: 90vw;
-  height: 90vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  // @media screen and (min-width: 320px) and (max-width: 640px) {
-  //   flex-direction: column;
-  // }
+  text-align: center;
   h1 {
-    font-size: 3rem;
+    font-size: 5rem;
+  }
+  p {
+    padding: 1% 0 5% 0;
   }
   section {
-    margin: 30vh 0 0 10vh;
+    margin: 25vh;
   }
 `;
 
@@ -40,7 +41,7 @@ const SocialLi = styled(Linkedin)`
 `;
 
 const SocialGb = styled(Github)`
-  padding-left: 5%;
+  // padding-left: 5%;
 `;
 
 export { HeaderContainer, Svg, SocialCv, SocialGb, SocialLi, SocialTw };

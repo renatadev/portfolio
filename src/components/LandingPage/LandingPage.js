@@ -5,12 +5,16 @@ const LandingPage = () => {
   return (
     <>
       <Style.HeaderContainer>
-        <Style.Svg />
+        <main>
+          <Style.Svg />
+        </main>
         <section>
-          <h1>Renata Guerra</h1>
+          <h1>
+            Renata <br /> Guerra
+          </h1>
           <p>SOFTWARE DEVELOPER</p>
           <a
-            href="https://twitter.com/renatadev"
+            href="https://github.com/renatadev"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -24,7 +28,7 @@ const LandingPage = () => {
             <Style.SocialTw />
           </a>
           <a
-            href="https://twitter.com/renatadev"
+            href="https://linkedin.com/in/renatadev"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -38,7 +42,6 @@ const LandingPage = () => {
             <Style.SocialCv />
           </a>
         </section>
-        {/* social media buttons styled components here */}
       </Style.HeaderContainer>
     </>
   );
