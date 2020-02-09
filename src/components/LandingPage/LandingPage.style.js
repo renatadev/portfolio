@@ -10,6 +10,7 @@ const HeaderContainer = styled.header`
   height: 100vh;
   display: flex;
   text-align: center;
+  align-items: center;
   h1 {
     font-size: 5rem;
   }
@@ -17,7 +18,10 @@ const HeaderContainer = styled.header`
     padding: 1% 0 5% 0;
   }
   section {
-    margin: 25vh;
+    margin-left: 25vh;
+  }
+  @media screen and (min-width: 320px) and (max-width: 640px) {
+    margin-left: 0px;
   }
 `;
 
