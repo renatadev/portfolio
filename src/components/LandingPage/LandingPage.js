@@ -1,12 +1,15 @@
 import React from "react";
+import * as Style from "./LandingPage.style";
 
 const LandingPage = () => {
   return (
     <>
-      {/* image here */}
-      <h1>Renata's portfolio</h1>
-      <p>SOFTWARE DEVELOPER</p>
-      {/* social media buttons styled components here */}
+      <Style.HeaderContainer>
+        {/* image here */}
+        <h1>Renata Guerra</h1>
+        <p>SOFTWARE DEVELOPER</p>
+        {/* social media buttons styled components here */}
+      </Style.HeaderContainer>
     </>
   );
 };
