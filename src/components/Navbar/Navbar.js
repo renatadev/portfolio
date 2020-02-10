@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
       <Style.Navbar>
         <h1>RG</h1>
-        {/* menu */}
+        <Nav />
       </Style.Navbar>
     </>
   );

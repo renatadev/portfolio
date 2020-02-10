@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as Menu } from "../../assets/menu.svg";
 
 const Navbar = styled.nav`
   position: fixed;
@@ -9,4 +10,8 @@ const Navbar = styled.nav`
   padding-left: 1%;
 `;
 
-export { Navbar };
+const Nav = styled(Menu)`
+  right: 0;
+`;
+
+export { Navbar, Nav };
