@@ -10,7 +10,8 @@ const Navbar = () => {
             <a href="/">RG</a>
           </h1>
           <span></span>
-          <div>
+          <Style.ToggleButton />
+          {/* <div>
             <ul>
               <li>
                 <a href="/">Home</a>
@@ -25,7 +26,7 @@ const Navbar = () => {
                 <a href="#Tech">Tech Stack</a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </Style.Navbar>
       </Style.Head>
     </>

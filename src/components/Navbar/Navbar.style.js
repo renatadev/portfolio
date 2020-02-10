@@ -34,10 +34,11 @@ const Navbar = styled.nav`
   }
 `;
 
-const Nav = styled(Menu)`
+const ToggleButton = styled(Menu)`
+  padding: 0 0.8rem;
   text-decoration: none;
   // display: flex;
   // justify-content: right;
 `;
 
-export { Head, Navbar, Nav };
+export { Head, Navbar, ToggleButton };
