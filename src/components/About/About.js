@@ -4,7 +4,7 @@ import * as Style from "./About.style";
 const About = () => {
   return (
     <>
-      <Style.About>
+      <Style.About id="About">
         <main>
           <h2>about me</h2>
           <p>
