@@ -5,9 +5,7 @@ const LandingPage = () => {
   return (
     <>
       <Style.HeaderContainer id="home">
-        <main>
-          <Style.Svg />
-        </main>
+        <Style.Svg />
         <section>
           <h1>
             Renata <br /> Guerra
