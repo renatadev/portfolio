@@ -1,34 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import * as Style from "./Navbar.style";
+import SlideMenu from "../SlideMenu/SlideMenu";
 
 const Navbar = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  const toggleNav = () => {
+    setNavbar(!navbar);
+  };
   return (
     <>
       <Style.Head>
         <Style.Navbar>
           <h1>
-            <a href="/">RG</a>
+            <a href="#home">RG</a>
           </h1>
           <span></span>
-          <Style.ToggleButton />
-          {/* <div>
-            <ul>
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="#About">About</a>
-              </li>
-              <li>
-                <a href="#Projects">Projects</a>
-              </li>
-              <li>
-                <a href="#Tech">Tech Stack</a>
-              </li>
-            </ul>
-          </div> */}
+          <Style.ToggleButton onClick={toggleNav} />
         </Style.Navbar>
       </Style.Head>
+      {navbar && <SlideMenu navbar={navbar} setNavbar={setNavbar} />}
     </>
   );
 };

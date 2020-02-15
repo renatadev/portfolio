@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as Menu } from "../../assets/menu.svg";
+import { ReactComponent as Close } from "../../assets/close.svg";
 
 const Head = styled.header`
   position: fixed;
@@ -19,14 +20,15 @@ const Navbar = styled.nav`
     padding: 0 0.5rem;
     &:hover {
       color: blue;
+      border-bottom: 10px solid #f14b31;
     }
   }
-
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     font-size: 1.2rem;
   }
   span {
@@ -37,8 +39,13 @@ const Navbar = styled.nav`
 const ToggleButton = styled(Menu)`
   padding: 0 0.8rem;
   text-decoration: none;
-  // display: flex;
-  // justify-content: right;
+  cursor: pointer;
 `;
 
-export { Head, Navbar, ToggleButton };
+const CloseButton = styled(Close)`
+  padding: 0 0.8rem;
+  text-decoration: none;
+  cursor: pointer;
+`;
+
+export { Head, Navbar, ToggleButton, CloseButton };

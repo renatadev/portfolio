@@ -8,13 +8,12 @@ import TechStack from "./components/TechStack/TechStack";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
-import SlideMenu from "./components/Navbar/SlideMenu";
+
 const App = () => {
   return (
     <>
       <Router>
         <Navbar />
-        <SlideMenu />
         <Route exact path="/" component={LandingPage} />
         <About />
         <Projects />

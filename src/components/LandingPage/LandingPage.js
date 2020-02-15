@@ -4,7 +4,7 @@ import * as Style from "./LandingPage.style";
 const LandingPage = () => {
   return (
     <>
-      <Style.HeaderContainer>
+      <Style.HeaderContainer id="home">
         <main>
           <Style.Svg />
         </main>
