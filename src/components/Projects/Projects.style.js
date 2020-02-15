@@ -8,8 +8,10 @@ const ProjectsContainer = styled.div`
     height: auto;
     border: 10px solid #9987c5;
     border-radius: 4px;
+    filter: grayscale(20%);
     &:hover {
       box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+      filter: none;
     }
   }
   h2 {
