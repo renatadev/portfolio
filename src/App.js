@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import LandingPage from "./components/LandingPage/LandingPage";
 import About from "./components/About/About";
 import TechStack from "./components/TechStack/TechStack";
-import Contact from "./components/Contact/Contact";
+// import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 
@@ -22,6 +22,20 @@ const App = () => {
   React.useEffect(() => {
     projectDataCall();
   }, []);
+
+  const [techData, setTechData] = useState(null);
+
+  const techDataCall = async () => {
+    await (await fetch("/.netlify/functions/techData/techData.js"))
+      .json()
+      .then(data => setTechData(data))
+      .catch(console.error);
+  };
+
+  React.useEffect(() => {
+    techDataCall();
+  }, []);
+
   return (
     <>
       <Router>
@@ -29,8 +43,8 @@ const App = () => {
         <Route exact path="/" component={LandingPage} />
         <About />
         <Route render={() => <Projects projectData={projectData} />} />
-        {/* <TechStack />
-        <Contact /> */}
+        <Route render={() => <TechStack techData={techData} />} />
+        {/* <Contact /> */}
         <Footer />
       </Router>
     </>
