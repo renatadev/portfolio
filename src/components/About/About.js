@@ -6,7 +6,7 @@ const About = () => {
     <>
       <Style.About id="About">
         <main>
-          <h2>about me</h2>
+          <h2>Hola, soy Renata!</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

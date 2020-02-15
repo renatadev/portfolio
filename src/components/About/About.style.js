@@ -6,9 +6,6 @@ const About = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  h2 {
-    font-size: 3rem;
-  }
   main {
     text-align: center;
     padding: 5%;
