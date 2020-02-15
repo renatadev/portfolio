@@ -1,24 +1,29 @@
 import styled from "styled-components";
 
-const About = styled.header`
+const About = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: auto;
   display: flex;
-  flex-direction: row;
-  flex-wrap: no-wrap;
   align-items: center;
+  justify-content: space-evenly;
   h2 {
     font-size: 3rem;
   }
   main {
-    padding: 5%;
     text-align: center;
-  }
-  section {
     padding: 5%;
   }
-  @media screen and (min-width: 320px) and (max-width: 640px) {
-    flex-direction: column;
+
+  img {
+    padding: 5%;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 800px) {
+    flex-direction: column-reverse;
+    img {
+      width: 303px;
+      height: auto;
+    }
   }
 `;
 

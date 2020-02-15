@@ -7,9 +7,8 @@ import { ReactComponent as Linkedin } from "../../assets/SocialMedia/linkedin.sv
 
 const HeaderContainer = styled.header`
   width: 100vw;
-  height: 100vh;
+  height: auto;
   display: flex;
-  text-align: center;
   align-items: center;
   h1 {
     font-size: 5rem;
@@ -20,14 +19,17 @@ const HeaderContainer = styled.header`
   section {
     margin-left: 25vh;
   }
-  @media screen and (min-width: 320px) and (max-width: 640px) {
-    margin-left: 0px;
+  @media screen and (min-width: 320px) and (max-width: 800px) {
+    flex-direction: column;
+    padding-top: 4rem;
+    section {
+      margin-left: 0vh;
+    }
   }
 `;
 
 const Svg = styled(MainSvg)`
   @media screen and (min-width: 320px) and (max-width: 640px) {
-    // width: 50vw;
     display: none;
   }
 `;
