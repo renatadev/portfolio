@@ -6,7 +6,7 @@ const Projects = ({ projectData }) => {
   const projectRecord = projectData.records;
   return (
     <>
-      <h2>Projects</h2>
+      <h2 id="Projects">Projects</h2>
       <SC.FlexedProjects>
         {projectRecord.map(record => (
           <SC.ProjectsContainer key={record.fields.project_id}>
