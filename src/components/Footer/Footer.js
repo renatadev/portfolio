@@ -10,6 +10,8 @@ const Footer = () => {
           💜
         </span>
         by Renata
+        <br></br>
+        <a href="mailto:contact@renata.dev">contact@renata.dev</a>
       </footer>
     </Style.FooterWrapper>
   );

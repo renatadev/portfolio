@@ -2,7 +2,7 @@ import React from "react";
 import * as SC from "./TechStack.style";
 
 const TechStack = ({ techData }) => {
-  if (!techData) return <h1>Loading...</h1>;
+  if (!techData) return <h1>Loading tech stack...</h1>;
   const techRecord = techData.records;
   return (
     <>

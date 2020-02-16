@@ -2,7 +2,7 @@ import React from "react";
 import * as SC from "./Projects.style";
 
 const Projects = ({ projectData }) => {
-  if (!projectData) return <h1>Loading...</h1>;
+  if (!projectData) return <h1>Loading projects...</h1>;
   const projectRecord = projectData.records;
   return (
     <>

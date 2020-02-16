@@ -33,11 +33,11 @@ const LandingPage = () => {
             <Style.SocialLi />
           </a>
           <a
-            href="https://twitter.com/renatadev"
+            href="mailto:contact@renata.dev"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Style.SocialCv />
+            <Style.SocialEmail />
           </a>
         </section>
       </Style.HeaderContainer>
