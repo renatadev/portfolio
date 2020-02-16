@@ -14,6 +14,13 @@ const ProjectsContainer = styled.div`
       filter: none;
     }
   }
+  @media screen and (min-width: 320px) and (max-width: 640px) {
+    img {
+      width: 250px;
+      border: 5px solid #9987c5;
+    }
+  }
+
   h2 {
     font-size: 2rem;
   }

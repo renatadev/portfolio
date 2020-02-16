@@ -3,6 +3,7 @@ import { ReactComponent as Menu } from "../../assets/menu.svg";
 import { ReactComponent as Close } from "../../assets/close.svg";
 
 const Head = styled.header`
+  z-index: 5;
   position: fixed;
   font-size: 2rem;
   width: 100%;

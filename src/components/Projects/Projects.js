@@ -37,14 +37,14 @@ const Projects = ({ projectData }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p>Visit the Website</p>
+              <p>&#8594; Visit the Website </p>
             </a>
             <a
               href={record.fields.code}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p>See the code</p>
+              <p>&#8594; See the code </p>
             </a>
           </SC.ProjectsContainer>
         ))}

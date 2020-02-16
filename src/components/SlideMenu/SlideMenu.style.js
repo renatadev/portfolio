@@ -6,7 +6,6 @@ const SlideNav = styled.ul`
   li {
     box-sizing: border-box;
     padding: 0.5rem;
-    /* width: 10vw; */
     list-style-type: none;
   }
   a {
@@ -37,12 +36,16 @@ const SlideNav = styled.ul`
 `;
 
 const HackBox = styled.div`
+  z-index: 5;
   overflow: visible;
   height: 0;
   position: sticky;
   top: 8vh;
   margin-left: 90vw;
   margin-right: auto;
+  @media screen and (min-width: 320px) and (max-width: 640px) {
+    margin-left: 80vw;
+  }
 `;
 
 export { SlideNav, HackBox };
