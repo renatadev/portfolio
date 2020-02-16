@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 const ProjectsContainer = styled.div`
+  max-width: 300px;
   margin-top: 2rem;
-  padding: 1rem;
+  padding: 0 2rem 0 2rem;
   img {
     width: 300px;
     height: auto;
@@ -23,19 +24,30 @@ const ProjectsContainer = styled.div`
 
   h2 {
     font-size: 2rem;
+    padding: 0.5rem;
   }
   p {
     text-align: justify;
     line-height: 1.5;
     margin: 0rem 1rem 1rem 0rem;
   }
+  .role {
+    font-weight: 700;
+  }
+  .stack {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
   a {
     text-decoration: none;
     color: #2b2b31;
     &:hover {
       text-decoration: underline;
-      color: rgba(0, 140, 186, 0.5);
+      color: #9987c5;
     }
+  }
+  .image:hover {
+    color: rgba(0, 140, 186, 0.5);
   }
 `;
 

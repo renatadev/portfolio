@@ -14,6 +14,7 @@ const Projects = ({ projectData }) => {
               href={record.fields.website}
               target="_blank"
               rel="noopener noreferrer"
+              className="image"
             >
               <img
                 src={record.fields.image}
@@ -29,8 +30,9 @@ const Projects = ({ projectData }) => {
               <h2>{record.fields.title}</h2>
             </a>
             {record.fields.role ? (
-              <p>Role: {record.fields.role} & developer</p>
+              <p className="role">Role: {record.fields.role} & developer</p>
             ) : null}
+            <p className="stack">Tech stack: {record.fields.tech_stack} </p>
             <p>{record.fields.caption}</p>
             <a
               href={record.fields.website}

@@ -7,10 +7,13 @@ const About = styled.div`
   align-items: center;
   justify-content: space-evenly;
   main {
-    text-align: center;
+    text-align: justify;
     padding: 5%;
   }
-
+  p {
+    padding: 0.5rem;
+    line-height: 1.5rem;
+  }
   img {
     padding: 5%;
   }
@@ -24,4 +27,8 @@ const About = styled.div`
   }
 `;
 
-export { About };
+const Bold = styled.span`
+  font-weight: 600;
+`;
+
+export { About, Bold };
