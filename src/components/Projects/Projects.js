@@ -28,6 +28,9 @@ const Projects = ({ projectData }) => {
             >
               <h2>{record.fields.title}</h2>
             </a>
+            {record.fields.role ? (
+              <p>Role: {record.fields.role} & developer</p>
+            ) : null}
             <p>{record.fields.caption}</p>
             <a
               href={record.fields.website}
