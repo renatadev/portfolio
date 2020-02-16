@@ -6,7 +6,7 @@ const TechStack = ({ techData }) => {
   const techRecord = techData.records;
   return (
     <>
-      <h2>Tech Stack</h2>
+      <h2 id="Tech">Tech Stack</h2>
       <SC.Margin>
         <SC.FlexedStack>
           {techRecord.map(record => (

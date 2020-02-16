@@ -19,15 +19,17 @@ const StackContainer = styled.div`
 const FlexedStack = styled.div`
   display: flex;
   flex-wrap: wrap;
-  flex: 1 0 21%;
   justify-content: center;
 `;
 
 const Margin = styled.div`
   @media screen and (min-width: 320px) and (max-width: 640px) {
     margin: 0 2rem 0 2rem;
+    img {
+      width: 40px;
+    }
   }
-  margin: 0 10rem 0 10rem;
+  margin: 0 6rem 0 6rem;
 `;
 
 export { StackContainer, FlexedStack, Margin };

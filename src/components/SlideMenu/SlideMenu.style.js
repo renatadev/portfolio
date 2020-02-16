@@ -6,7 +6,7 @@ const SlideNav = styled.ul`
   li {
     box-sizing: border-box;
     padding: 0.5rem;
-    width: 10vw;
+    /* width: 10vw; */
     list-style-type: none;
   }
   a {
