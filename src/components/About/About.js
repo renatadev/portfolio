@@ -34,7 +34,7 @@ const About = () => {
         </main>
         <img
           alt="Renata's avatar in about section"
-          src={require("../../assets/About/about-me.svg")}
+          src={require("../../assets/About/about.png")}
         ></img>
       </Style.About>
     </>
