@@ -17,6 +17,13 @@ const About = styled.div`
   img {
     padding: 5%;
   }
+  a {
+    text-decoration: none;
+    color: #9987c5;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
   @media screen and (min-width: 320px) and (max-width: 800px) {
     flex-direction: column-reverse;

@@ -1,5 +1,6 @@
 import React from "react";
 import * as SC from "./About.style";
+import cv from "../../assets/Renata-Guerra-CV.pdf";
 
 const About = () => {
   return (
@@ -37,6 +38,9 @@ const About = () => {
             baking, always looking to improve but generally making sure to have
             fun!
           </p>
+          <a href={cv} target="_blank" rel="noopener noreferrer">
+            <SC.Bold className="cv">&#8594; Take a look at my CV</SC.Bold>
+          </a>
         </main>
         <img
           alt="Renata's avatar in about section"

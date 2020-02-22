@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar/Navbar";
 import LandingPage from "./components/LandingPage/LandingPage";
 import About from "./components/About/About";
 import TechStack from "./components/TechStack/TechStack";
-// import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 
@@ -44,7 +43,6 @@ const App = () => {
         <About />
         <Route render={() => <Projects projectData={projectData} />} />
         <Route render={() => <TechStack techData={techData} />} />
-        {/* <Contact /> */}
         <Footer />
       </Router>
     </>
