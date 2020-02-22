@@ -22,7 +22,6 @@ const About = styled.div`
     color: #9987c5;
     &:hover {
       text-decoration: underline;
-      color: #9987c5;
     }
   }
 
